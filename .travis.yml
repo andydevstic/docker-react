@@ -3,7 +3,7 @@ services:
   - docker # Add docker to our little running container
 
 before_install: # Declares steps to do before running our tests or deploy our code.
-  - docker build -t andydevstic/docker-react -f dockerfile.dev .
+  - docker build -t andydevstic/docker-react -f Dockerfile.dev .
 
 # steps to produce when preparation steps has been finished.
 # Each step should exit automatically with success. If each step exits with exit code != 0 or just hangs then it's not what we want.
